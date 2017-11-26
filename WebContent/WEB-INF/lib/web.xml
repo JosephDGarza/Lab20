@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Lab20Youtube</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+      <welcome-file>index.jsp</welcome-file>
+       <welcome-file>default.html</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+     
+  </welcome-file-list>
+
+    <servlet>
+    <description></description>
+    <display-name>pageOneProcess</display-name>
+    <servlet-name>pageOneProcess</servlet-name>
+        <servlet-class>com.as.samples.pageOneProcess</servlet-class>
+         </servlet>
+        
+   
+    <servlet-mapping>
+     <servlet-name>pageOneProcess</servlet-name>
+        <url-pattern>/pageOneProcess</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <description></description>
+    <display-name>pageTwoProcess</display-name>
+    <servlet-name>pageTwoProcess</servlet-name>
+        <servlet-class>com.as.samples.pageTwoProcess</servlet-class>
+    </servlet>
+    
+        <servlet-mapping>
+     <servlet-name>pageTwoProcess</servlet-name>
+        <url-pattern>/pageTwoProcess</url-pattern>
+    </servlet-mapping>
+
+</web-app>
