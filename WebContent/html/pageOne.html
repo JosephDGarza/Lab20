@@ -59,7 +59,7 @@ background-image:url("iStock-166295730.jpg");
   First Name:<input type="text" name="firstName" placeholder="John" aria-label="John" required><br>
 Last Name:<input type="text" name="lastName" placeholder="Doe" aria-label="Doe" required><br>
 Email:<input type="email" name="email" placeholder="Email@Email.com" aria-label="Email@Email.com" required><br>
-  <input type="tel" id="cell" pattern="[0-9]*" name="phoneNumber"  value=""   maxlength=10 role="textbox" placeholder="Mobile phone number" title="Must be a 10 digit number, no spaces or dashes"aria-label="Mobile phone number" required >(No Dashes: 5555555555) <br>
+  <input type="tel" id="cell" pattern="[0-9]*.{10}" name="phoneNumber"  value=""   maxlength=10 role="textbox" placeholder="Mobile phone number" title="Must be a 10 digit number, no spaces or dashes"aria-label="Mobile phone number" required >(No Dashes: 5555555555) <br>
   <div class="container">
     <label for="psw">Password</label>
     <input type="password" id="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  autocomplete="off" name="password" placeholder="Password" aria-label="Password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
