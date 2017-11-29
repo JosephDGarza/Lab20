@@ -20,7 +20,9 @@ background-color:<%= session.getAttribute("color") %>;
 body{
 background-image:url("spiration dark.png");
 }
+
 </style>
+
 <p><div style="border-width: 4px;  border-style: inset; border-color: red; ">
  Thank you for registering: <%= session.getAttribute("firstName") %>
 <%= session.getAttribute("lastName") %><br>
@@ -38,7 +40,11 @@ You go out to buy coffee <%= session.getAttribute("coffeeMonth") %> times a mont
 Your favorite coffee shop is <%= session.getAttribute("coffeeShops") %> <br>
 Day do you need coffee on the most is <%= session.getAttribute("daysCoffee") %> 
  </div> 
+ 
+ 
 </p>
+
+ <a href="Items.jsp">Shop now!</a>
 
 </body>
 </html>
